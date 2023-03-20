@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mystery books in Read n' Deal</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+                h1, h4 {
+                    padding-left: 5%;
+                }
+
+                .styled {
+                    border: 0;
+                    line-height: 2.5;
+                    padding: 0 20px;
+                    font-size: 1rem;
+                    text-align: center;
+                    color: #ffffff;
+                    text-shadow: 1px 1px 1px #ffffff;
+                    border-radius: 10px;
+                    background-color: rgba(220, 0, 0, 1);
+                    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+                    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                }
+
+                .styled:hover {
+                    background-color: rgba(255, 0, 0, 1);
+                }
+
+                .styled:active {
+                    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                    inset 2px 2px 3px rgba(0, 0, 0, .6);
+                }
+                body {
+                    background-image: url('../assets/mystery.png');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    color: rgb(0, 0, 0);
+                    position: relative;
+                    isolation: isolate;
+                }
+                body::after{
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    inset: 0;
+                    background: white;
+                    opacity: 0.7;
+                }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="Homepage.html"><img src="../assets/Logo1.png" height="60" width="120"></a> 
+                </div>
+    
+                <ul class="nav navbar-nav">
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li class="dropdown" class="active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Mystery.html">Mystery</a></li>
+                            <li><a href="Fantasy.html">Fantasy</a></li>
+                            <li><a href="Comic.html">Comic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1>
+            Mystery
+        </h1>
+        <h4>
+            Within this world of mystery, the reader is transported to a time of flickering candlelight and crackling fires, where the wind whistles through dark and twisting passageways, and the rain beats a steady rhythm against the window panes. Every scene is set amidst the backdrop of crumbling stone walls, ornate stained-glass windows, and creaking floorboards, heightening the sense of unease and foreboding.
+
+It is a world where brave detectives with sharp minds and quick wits must navigate through a labyrinth of clues, each one leading them closer to the truth. The mystery genre is a realm where the stakes are high, where every wrong turn could lead to a deadly outcome, and where the final revelation is as shocking as it is satisfying.
+        </h4>
+        <div class="container">
+            <div class="row">
+
+            <div class="col-lg-4 mb-4">
+                <h3><b>The Exile</b></h3>
+                <a href="TheExile.html"><img src="../assets/Exile.jpg" height="320" width="240"><br></a> 
+            </div>
+    
+        <div class="col-lg-4 mb-4">
+            <h3><b>Sherlock Holmes</b></h3>
+            <a href="Sherlock.html"><img src="../assets/Sherlock.jpg" height="320" width="240"><br></a>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <h3><b>Cartel</b></h3>
+            <a href="Cartel.html"><img src="../assets/Cartel.jpg" height="320" width="240"><br></a>
+        </div>
+                <div class="col-lg-4 mb-4">
+            <h3><b>Whirlpool</b></h3><br>
+                <a href="Whirlpool.html"><img src="../assets/Whirlpool.jpg" width="240" width="320"><br></a>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <h3><b>Murder on the <br>
+                Orient Express</b></h3>
+            <a href="OrientExpress.html"><img src="../assets/MurderOnOrientExpress.jpg" width="240" width="320"><br></a>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <h3><b>Strange Case of<br>Dr Jekyll and Mr Hyde</b></h3>
+            <a href="JekyllHyde.html"><img src="../assets/JekyllAndHyde.jpg" width="240" width="320"><br></a>
+        </div>
+    </body>
+</html>

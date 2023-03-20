@@ -1,0 +1,18 @@
+body {
+    background-color: burlywood;
+}
+h1 {
+    font-size: 40pt;
+    color: darkgoldenrod;
+    text-align: center;
+    font-family: Helvetica;
+}
+.button {
+    background-color: khaki;
+    font-family: 'Trebuchet MS';
+    padding: 10 10;
+    font-size: 20;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
