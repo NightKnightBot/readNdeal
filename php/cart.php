@@ -37,4 +37,3 @@ if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['produc
     exit;
 
 }
-
