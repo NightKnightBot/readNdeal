@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Buy car now! </title>
+        <title>Fantastic Beasts and Where to FInd Them</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
             p {
-                text-indent: 50px;
+                text-indent: 0px;
+                font-size: 20px;
+                padding-left: 10%;
+                padding-right: 10%;
             }
 
             label{
@@ -34,7 +37,8 @@
                 background-color: rgba(220, 0, 0, 1);
                 background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
                 box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+                font-size: 20px;
             }
 
             .styled:hover {
@@ -43,19 +47,30 @@
 
             .styled:active {
                 box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                    inset 2px 2px 3px rgba(0, 0, 0, .6);
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
             }
+            
             body {
-                background-image: url('brug.png');
-                background-repeat: no-repeat;
+                background-image: url('../assets/Harry_Potter.png');
+                background-repeat: repeat;
                 background-attachment: fixed;
-                background-size: cover;
+                background-size: contain;
                 color: black;
+                position: relative;
+                isolation: isolate;
+            }
+            body::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                background-color: white;
+                inset: 0;
+                opacity: 0.7;
             }
 
             input {
-                color: black;
-                background-color: white;
+                color: red;
+                background-color: yellow;
             }
 
             img {
@@ -72,7 +87,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <img src="Logo1.png" height="60" width="120">
+                    <img src="../assets/Logo1.png" height="60" width="120">
                 </div>
     
                 <ul class="nav navbar-nav">
@@ -81,51 +96,30 @@
                     <li><a href="ContactUs.html">Contact Us</a></li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="SedanPage.html">Sedans</a></li>
-                            <li><a href="SUVPage.html">SUVs</a></li>
-                            <li><a href="HatchbackPage.html">Hatchbacks</a></li>
-                        </ul>
+                            <li><a href="Mystery.html">Mystery</a></li>
+                            <li><a href="Fantasy.html">Fantasy</a></li>
+                            <li><a href="Comic.html">Comics</a></li>
                     </li>
                 </ul>
-    
-                <form class="navbar-form navbar-right" action="/action_page.php">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search.." name="search">
-                        <input type="email" class="form-control" placeholder="email" name="email">
-                        <input type="password" class="form-control" placeholder="password" name="password">
-                    </div>
-    
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                </form>
             </div>
         </nav>
 
-        <h1><center>Harry Potter and the Chamber of Secrets</center></h1>
-        
-    <img src="Harry_Potter.png">
-        
+        <h1>
+        <centre>
+            Harry Potter and The Chamber of Secrets
+        </centre>
+        </h1>
+    <centre>
         <p>
-            <center>
-                Wizard Harry Potter. Hogwarts is his second year. He doesn't realise that this year will be just as hectic.
-            </center>
+            Wizard Harry Potter. Hogwarts is his second year. He doesn't realise that this year will be just as hectic.
         </p>
+        
+    </centre><br>
 
         <center>
-            <h3>Submit your enquiry for this book</h3>
-            <form action="/action_page.php">
-                <label for="fname">First name:</label>  
-                <input type="text" id="fname" name="fname"><br>
+        <input class="favorite styled" type="button" value="Add To Cart">
+    </center>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-                <label for="lname">Last name:</label>   
-                <input type="text" id="lname" name="lname"><br>
-
-                <label for="mailid">Email ID:</label>     
-                <input type="email" id="mailid" name="mailid"><br><br>
-
-                     <a href="EnquirySubmission.html" >
-        <input class="favorite styled" type="button" value="Submit">
-    </a><br><br>
-        </form>
-        </center>
     </body>
 </html>

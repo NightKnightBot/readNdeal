@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Buy car now! </title>
+        <title>Daughters Of Izdihar</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
             p {
-                text-indent: 50px;
+                text-indent: 0px;
+                font-size: 20px;
+                padding-left: 10%;
+                padding-right: 10%;
             }
 
             label{
@@ -34,7 +37,8 @@
                 background-color: rgba(220, 0, 0, 1);
                 background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
                 box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+                font-size: 20px;
             }
 
             .styled:hover {
@@ -43,24 +47,35 @@
 
             .styled:active {
                 box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                    inset 2px 2px 3px rgba(0, 0, 0, .6);
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
             }
+            
             body {
-                background-image: url('brug.png');
-                background-repeat: no-repeat;
+                background-image: url('../assets/Izdihar_Daughters.png');
+                background-repeat: repeat;
                 background-attachment: fixed;
-                background-size: cover;
+                background-size: contain;
                 color: black;
+                position: relative;
+                isolation: isolate;
+            }
+            body::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                background-color: white;
+                inset: 0;
+                opacity: 0.7;
             }
 
             input {
-                color: black;
-                background-color: white;
+                color: red;
+                background-color: yellow;
             }
 
             img {
-                height: 225;
-                width: 200;
+                height: 325;
+                width: 500;
                 margin-left: auto;
                 margin-right: auto;
                 display: block;
@@ -72,7 +87,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <img src="Logo1.png" height="60" width="120">
+                    <img src="../assets/Logo1.png" height="60" width="120">
                 </div>
     
                 <ul class="nav navbar-nav">
@@ -81,59 +96,33 @@
                     <li><a href="ContactUs.html">Contact Us</a></li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="SedanPage.html">Sedans</a></li>
-                            <li><a href="SUVPage.html">SUVs</a></li>
-                            <li><a href="HatchbackPage.html">Hatchbacks</a></li>
-                        </ul>
+                            <li><a href="Mystery.html">Mystery</a></li>
+                            <li><a href="Fantasy.html">Fantasy</a></li>
+                            <li><a href="Comic.html">Comics</a></li>
                     </li>
                 </ul>
-    
-                <form class="navbar-form navbar-right" action="/action_page.php">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search.." name="search">
-                        <input type="email" class="form-control" placeholder="email" name="email">
-                        <input type="password" class="form-control" placeholder="password" name="password">
-                    </div>
-    
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                </form>
             </div>
         </nav>
 
         <h1>
-            <center>
-                The Daughters of Izdihar
-            </center>
+        <centre>
+            Daughters Of Izdihar
+        </centre>
         </h1>
-
-        <img src="Izdihar_Daughters.png" height="225" width="200">
-
+    <centre>
         <p>
-            <center>
-                The first book in an incredibly powerful new duology by debut author Hadeer Elsbai<br>is about two young women,
-                Nehal, a spoiled aristocrat used to getting what she<br>wants, and Giorgina, a poor bookshop worker used to having
-                nothing, who find they<br>have far more in common, particularly in their struggle for women's rights and their<br> ability
-                to fight for it with forbidden elemental magic.
-            </center>
+            The first book in an incredibly powerful new duology by debut author Hadeer Elsbai is about two young women,
+            Nehal, a spoiled aristocrat used to getting what she wants,<br>and Giorgina, a poor bookshop worker used to having
+            nothing, who find they have far more in common, particularly in their struggle for women's rights and their ability
+            to fight for it with forbidden elemental magic.
         </p>
+        
+    </centre><br>
 
         <center>
-            <h3>Submit your enquiry for this car</h3>
-            <form action="/action_page.php">
-                <label for="fname">First name:</label>  
-                <input type="text" id="fname" name="fname"><br>
-
-                <label for="lname">Last name:</label>   
-                <input type="text" id="lname" name="lname"><br>
-
-                <label for="mailid">Email ID:</label>     
-                <input type="email" id="mailid" name="mailid"><br><br>
-            
-                     <a href="EnquirySubmission.html" >
-        <input class="favorite styled" type="button" value="Submit">
-    </a><br><br>
-            </form>
-        </center>
+        <input class="favorite styled" type="button" value="Add To Cart">
+    </center>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
     </body>
 </html>
