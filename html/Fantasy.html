@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> SUVs in Vector Autos </title>
+        <title>Fantasy books in Read n' Deal</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -9,39 +9,49 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
                 h1, h4 {
-                text-indent: 50px;
+                    padding-left: 5%;
                 }
 
                 .styled {
-   				border: 0;
-  				line-height: 2.5;
- 				padding: 0 20px;
-   		 		font-size: 1rem;
-    				text-align: center;
-    				color: #fff;
-  		  		text-shadow: 1px 1px 1px #000;
-    				border-radius: 10px;
-    				background-color: rgba(220, 0, 0, 1);
-    				background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
-    				box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                		inset -2px -2px 3px rgba(0, 0, 0, .6);
-			    }
+                    border: 0;
+                    line-height: 2.5;
+                    padding: 0 20px;
+                    font-size: 1rem;
+                    text-align: center;
+                    color: #ffffff;
+                    text-shadow: 1px 1px 1px #ffffff;
+                    border-radius: 10px;
+                    background-color: rgba(220, 0, 0, 1);
+                    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+                    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                }
 
-			    .styled:hover {
-    				background-color: rgba(255, 0, 0, 1);
-			    }
+                .styled:hover {
+                    background-color: rgba(255, 0, 0, 1);
+                }
 
-			    .styled:active {
-    				box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                		inset 2px 2px 3px rgba(0, 0, 0, .6);
-			    }
-			    body {
-  				    background-image: url('fantasy.png');
-				    background-repeat: no-repeat;
-				    background-attachment: fixed;
-				    background-size: cover;
-				    color: black;
-			    }
+                .styled:active {
+                    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                    inset 2px 2px 3px rgba(0, 0, 0, .6);
+                }
+                body {
+                    background-image: url('../assets/mystery.png');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    color: rgb(0, 0, 0);
+                    position: relative;
+                    isolation: isolate;
+                }
+                body::after{
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    inset: 0;
+                    background: white;
+                    opacity: 0.7;
+                }
         </style>
     </head>
 
@@ -49,7 +59,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <img src="Logo1.png" height="60" width="120">
+                    <a href="Homepage.html"><img src="../assets/Logo1.png" height="60" width="120"></a> 
                 </div>
     
                 <ul class="nav navbar-nav">
@@ -58,112 +68,50 @@
                     <li><a href="ContactUs.html">Contact Us</a></li>
                     <li class="dropdown" class="active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="SedansPage.html">Sedans</a></li>
-                            <li><a href="SUVPage.html">SUVs</a></li>
-                            <li><a href="HatchbackPage.html">Hatchbacks</a></li>
+                            <li><a href="Mystery.html">Mystery</a></li>
+                            <li><a href="Fantasy.html">Fantasy</a></li>
+                            <li><a href="Comic.html">Comic</a></li>
                         </ul>
                     </li>
                 </ul>
-    
-                <form class="navbar-form navbar-right" action="/action_page.php">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="email" name="email">
-                        <input type="password" class="form-control" placeholder="password" name="password">
-                    </div>
-    
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                </form>
             </div>
         </nav>
         <h1>
-            SUVs
-            <img src="SUV_Logo.png" height="125" width="150" align="right">
+            Fantasy
         </h1>
-        <h4>
-            Large four-door, but four or seven seater cars, which are mainly used for sporting or driving on off-road or rough terrains by adventure lovers.
+        <h4 style="padding-right: 10%;">
+            Ah, dear wanderer, do you wish to hear about the world of fantasy? A world where the impossible becomes reality, and the unimaginable takes form.
+
+In the realm of fantasy, creatures beyond your wildest dreams roam free. Dragons, unicorns, and faeries dance in enchanted forests, while witches, warlocks, and dark lords plot their sinister schemes. Magic flows through the very air, and heroes rise to face insurmountable odds, armed only with their courage and wits.
         </h4>
         <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 mb-4">
-                        <h3><b>Toyota Fortuner</b></h3>
-                        <p>
-                            <img src="Fortuner.png" height="190" width="350"><br>
-                            This is a 7-seater, 5-door SUV by Toyota. It is loved by many for its reliability, looks, engine and sturdyness. This model is used
-                            for 5 years and 1 month, and is driven 69056km.
-                        </p>
-    
-                        <a href="Fortunerpage.html" >
-                        <input class="favorite styled" type="button" value="Buy Now!">
-                        </a>
+            <div class="row">
+
+            <div class="col-lg-4 mb-4">
+                <h3><b>The Daughters of Izdihar<br></br></h3>
+                <a href="Daughter_Izdihar.html"><img src="../assets/Izdihar_Daughters.png" height="320" width="240"><br></a> 
             </div>
     
         <div class="col-lg-4 mb-4">
-            <h3><b>Force Gurkha</b></h3>
-    
-            <p>
-                <img src="Gurkha.png" height="190" width="350"><br>
-                An incredible 4 x 4 with unmatched all-terrain capablities. It is manufactured by Force Motors. This model is used for 8 years and driven for 39500kms.
-            </p>
-    
-                        <a href="GurkhaPage.html" >
-                        <input class="favorite styled" type="button" value="Buy Now!">
-                        </a>
+            <h3><b>Lord of The Rings<br></br></h3>
+            <a href="Lord_of_Rings.html"><img src="../assets/Lord_Rings.png" height="320" width="240"><br></a>
         </div>
 
         <div class="col-lg-4 mb-4">
-            <h3><b>Tata Safari</b></h3>
-    
-            <p>
-                <img src="Safarinueva.png" height="190" width="320"><br>
-                The Tata Safari is a benchmark in terms of design, performance and long lasting build quality. It is a 5-door, 7-seater SUV manufactured by Tata.
-                This model is almost 1 year old and been driven 10000kms.
-            </p>
-    
-                        <a href="UsedSafari.html" >
-                        <input class="favorite styled" type="button" value="Buy Now!">
-                        </a>
+            <h3><b>Fantastic Beasts and<br>Where to Find Them</br></h3>
+            <a href="Fanta_bees.html"><img src="../assets/Fant_Beasts.png" height="320" width="240"><br></a>
         </div>
                 <div class="col-lg-4 mb-4">
-            <h3><b>Mahindra XUV 700</b></h3>
-    
-            <p>
-                <img src="NewXUV700.png" height="240" width="400"><br>
-                It is one of the best and safest crossover SUVs made in India by the brand Mahindra. This model is used for 6 months and driven for 15245kms.
-            </p>
-    
-                        <a href="XUV700Page.html" >
-                        <input class="favorite styled" type="button" value="Buy Now!">
-                        </a>
+            <h3><b>Harry Potter and The<br>Chamber of Secrets</br></h3>
+                <a href="Hari_Puttar.html"><img src="../assets/Harry_Potter.png" width="240" width="320"><br></a>
         </div>
-
-                <div class="col-lg-4 mb-4">
-            <h3><b>Jeep Wrangler</b></h3>
-    
-            <p>
-                <img src="NewWrangler.png" height="230" width="500"><br>
-                One of the best SUVs all over the world is the Jeep Wrangler. It is been inspired from the Jeeps from WW2 and is one of the iconic SUVs in the world.
-                This Jeep is 4 months used and driven 2259kms.
-            </p>
-    
-                        <a href="WranglerPage.html" >
-                        <input class="favorite styled" type="button" value="Buy Now!">
-                        </a>
+        <div class="col-lg-4 mb-4">
+            <h3><b>Lost in The Moment<br>and Found</b></h3>
+            <a href="Lost_Moment_Found.html"><img src="../assets/Lost_Moment.png" width="240" width="320"><br></a>
         </div>
-
-                <div class="col-lg-4 mb-4">
-            <h3><b>Mahindra Thar</b></h3>
-    
-            <p>
-                <img src="Tharnew.png" height="210" width="390"><br>
-                Mahindra Thar is a tough competetor Of Jeep Wrangler. It is currently available in only 3-door version, as the 5-door version is under trial and is
-                expected to launch soon. this model is used for 1 year and is driven for 20223kms.
-            </p>
-            <p>
-                <br>
-            </p>
-                        <a href="TharPage.html" >
-                        <input class="favorite styled" type="button" value="Buy Now!">
-                        </a><br><br>
+        <div class="col-lg-4 mb-4">
+            <h3><b>The Stolen Heir<br></br></h3>
+            <a href="StolenHeir.html"><img src="../assets/Stolen_Heir.png" width="240" width="320"><br></a>
         </div>
     </body>
 </html>

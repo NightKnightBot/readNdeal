@@ -68,11 +68,6 @@
                 opacity: 0.7;
             }
 
-            input {
-                color: red;
-                background-color: yellow;
-            }
-
             img {
                 height: 325;
                 width: 500;
@@ -121,7 +116,13 @@
         <center>
         <input class="favorite styled" type="button" value="Add To Cart">
     </center>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <form action="../php/reviews.php" method="post">
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title">
+        <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea>
+        <button type="submit">SUbmit</button>
+    </form>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
     </body>
 </html>

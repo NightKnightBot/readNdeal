@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Buy car now! </title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            p {
+                text-indent: 50px;
+            }
+
+            label{
+                font-size: 18px
+            }
+
+            label {
+                text-indent: 50px;
+                font-size: 18px
+            }
+
+            .styled {
+                border: 0;
+                line-height: 2.5;
+                padding: 0 20px;
+                font-size: 1rem;
+                text-align: center;
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+                border-radius: 10px;
+                background-color: rgba(220, 0, 0, 1);
+                background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+                box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+            }
+
+            .styled:hover {
+                background-color: rgba(255, 0, 0, 1);
+            }
+
+            .styled:active {
+                box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                    inset 2px 2px 3px rgba(0, 0, 0, .6);
+            }
+            body {
+                background-image: url('brug.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                color: black;
+            }
+
+            input {
+                color: black;
+                background-color: white;
+            }
+
+            img {
+                height: 50;
+                width: 175;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="Logo1.png" height="60" width="120">
+                </div>
+    
+                <ul class="nav navbar-nav">
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="SedanPage.html">Sedans</a></li>
+                            <li><a href="SUVPage.html">SUVs</a></li>
+                            <li><a href="HatchbackPage.html">Hatchbacks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <form class="navbar-form navbar-right" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search.." name="search">
+                        <input type="email" class="form-control" placeholder="email" name="email">
+                        <input type="password" class="form-control" placeholder="password" name="password">
+                    </div>
+    
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </form>
+            </div>
+        </nav>
+
+        <h1>
+            <center>
+                The Stolen Heir
+            </center>
+        </h1>
+
+        <img src="Stolen_Heir.png" height="225" width="200">
+
+        <p>
+            <center>
+                Eight years after Serpent Battle. Lady Nore recovered the northern Needle Citadel.<br>She's making
+                revenge stick and snow creatures with an archaic artefact.Suren fled to humans.<br>Wild. She waits by rescuing
+                mortals. Storm hag Bogdana chases her at night.<br>Prince Oak saves Suren. Oak, 17, manipulates. Suren must work
+                north. If she agrees, she must shield<br>her heart from the youth she knew, a prince she cannot trust, and the
+                horrors she believed she left behind.
+            </center>
+        </p>
+
+        <center>
+            <h3>Submit your enquiry for this book</h3>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>  
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last name:</label>   
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="mailid">Email ID:</label>     
+                <input type="email" id="mailid" name="mailid"><br><br>
+
+                     <a href="EnquirySubmission.html" >
+        <input class="favorite styled" type="button" value="Submit">
+    </a><br><br>
+            </form>
+        </center>
+
+    </body>
+</html>
