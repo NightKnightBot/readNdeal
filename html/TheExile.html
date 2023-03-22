@@ -16,10 +16,6 @@
                 padding-right: 10%;
             }
 
-            label{
-                font-size: 18px
-            }
-
             label {
                 text-indent: 50px;
                 font-size: 18px
@@ -120,7 +116,10 @@
     </centre><br>
 
         <center>
-        <input class="favorite styled" type="button" value="Add To Cart">
+            <form action="../php/addToCart.php" method="post">
+                <input type="hidden" name="book-name" value="the-exile">
+                <input class="favorite styled" type="submit" name="cart-button" value="Add To Cart">
+            </form>
     </center>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
