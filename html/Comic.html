@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Hatchbacks in Vector Autos </title>
+        <title>Comic books in Read n' Deal</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -9,38 +9,49 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
                 h1, h4 {
-                text-indent: 50px;
+                    padding-left: 5%;
                 }
-			.styled {
-   				border: 0;
-  				line-height: 2.5;
- 				padding: 0 20px;
-   		 		font-size: 1rem;
-    				text-align: center;
-    				color: #fff;
-  		  		text-shadow: 1px 1px 1px #000;
-    				border-radius: 10px;
-    				background-color: rgba(220, 0, 0, 1);
-    				background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
-    				box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                		inset -2px -2px 3px rgba(0, 0, 0, .6);
-			}
 
-			.styled:hover {
-    				background-color: rgba(255, 0, 0, 1);
-			}
+                .styled {
+                    border: 0;
+                    line-height: 2.5;
+                    padding: 0 20px;
+                    font-size: 1rem;
+                    text-align: center;
+                    color: #ffffff;
+                    text-shadow: 1px 1px 1px #ffffff;
+                    border-radius: 10px;
+                    background-color: rgba(220, 0, 0, 1);
+                    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+                    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                }
 
-			.styled:active {
-    				box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                		inset 2px 2px 3px rgba(0, 0, 0, .6);
-			}
-			body {
-  				background-image: url('comic.png');
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-size: cover;
-				color: white;
-			}
+                .styled:hover {
+                    background-color: rgba(255, 0, 0, 1);
+                }
+
+                .styled:active {
+                    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                    inset 2px 2px 3px rgba(0, 0, 0, .6);
+                }
+                body {
+                    background-image: url('../assets/comic.png');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    color: rgb(255, 255, 255);
+                    position: relative;
+                    isolation: isolate;
+                }
+                body::after{
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    inset: 0;
+                    background: white;
+                    opacity: 0.1;
+                }
         </style>
     </head>
 
@@ -48,7 +59,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <img src="../assets/Logo1.png" height="60" width="120">
+                    <a href="Homepage.html"><img src="../assets/Logo1.png" height="60" width="120"></a> 
                 </div>
     
                 <ul class="nav navbar-nav">
@@ -57,128 +68,52 @@
                     <li><a href="ContactUs.html">Contact Us</a></li>
                     <li class="dropdown" class="active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="SedansPage.html">Sedans</a></li>
-                            <li><a href="SUVPage.html">SUVs</a></li>
-                            <li><a href="HatchbackPage.html">Hatchbacks</a></li>
+                            <li><a href="Mystery.html">Mystery</a></li>
+                            <li><a href="Fantasy.html">Fantasy</a></li>
+                            <li><a href="Comic.html">Comic</a></li>
                         </ul>
                     </li>
                 </ul>
-    
-                <form class="navbar-form navbar-right" action="/action_page.php">
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="email" name="email">
-                        <input type="password" class="form-control" placeholder="password" name="password">
-                    </div>
-    
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                </form>
             </div>
         </nav>
         <h1>
-            Hatchbacks
-			<img src="../assets/HatchbackLogo.png" height="100" width="220" align="right">
+            Comic
         </h1>
-        <h4>
-            A four door car with Compact Design, Low Maintenance Cost and Enhanced boot space.
-			<img src="../assets/FlameLogo.png" height="50" width="100" align="right">
-			<img src="../assets/FlameLogo.png" height="50" width="100" align="right">
+        <h4 style="padding-right: 10%;">
+            Come explore the goofy world of image-based story telling, where things are more descriptive and eye-catching
+            Comic books are a diverse medium that can tell stories across a wide range of themes and styles, making them a beloved form of entertainment for people of all ages and interests.
         </h4>
         <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 mb-4">
-				<br>
-                        <h3><b>Maruti Suzuki Alto</b></h3>
-                        <p>
-                            <img src="../assets/Alto800.png" height="190" width="350"><br>
-                            The Maruti Suzuki Alto is a city car manufactured and marketed by Suzuki through its 
-					 subsidiary Maruti Suzuki primarily for the Indian market since 2000.
-					 The first generation was launched on 27 September 2000. The Alto mileage is 18.9 kmpl to 26.83 km/kg. 
-					 The Manual Petrol variant has a mileage of 19.7 kmpl.
-                        </p>
-    
-                        <a href="MarutiSuzukiAlto.html" >
-                        <input class="favorite styled" type="button" value="Buy Now">
-                        </a>
+            <div class="row">
+
+            <div class="col-lg-4 mb-4">
+                <h3><b>The Flash<br></br></h3>
+                <a href="Daughter_Izdihar.html"><img src="../assets/Com1.png" height="320" width="240"><br></a> 
             </div>
     
         <div class="col-lg-4 mb-4">
-            <h3><b>Hyundai i10</b></h3>
-    
-            <p>
-                <img src="Hyundaii10.png" height="190" width="350"><br>
-                The Hyundai i10 has 2 Petrol Engine and 1 LPG Engine on offer. The Petrol engine is 1086 cc 
-			and 1197 cc while the LPG engine is 1086 cc . It is available with Manual & Automatic transmission. 
-			Depending upon the variant and fuel type the i10 has a mileage of 16.95 to 20.36 kmpl & Ground clearance of i10 is 165mm.
-            </p>
-    
-                        <a href="Hyundai_i10.html" >
-                        <input class="favorite styled" type="button" value="Buy Now">
-                        </a>
+            <h3><b>Invincible<br></br></h3>
+            <a href="Lord_of_Rings.html"><img src="../assets/Com2.png" height="320" width="240"><br></a>
         </div>
 
         <div class="col-lg-4 mb-4">
-            <h3><b>Volkswagen Polo</b></h3>
-    
-            <p>
-                <img src="../assets/VolkswagenPolo.png" height="190" width="320"><br>
-                The Volkswagen Polo has 1 Diesel Engine and 2 Petrol Engine on offer. The Diesel engine is 1498 cc while the 
-			Petrol engine is 999 cc and 1197 cc . It is available with Manual & Automatic transmission.Depending upon the 
-			variant and fuel type the Polo has a mileage of & Ground clearance of Polo is 165mm. The Polo is a 5 seater 3 
-			cylinder car and has length of 3971mm, width of 1682mm and a wheelbase of 2469mm.
-            </p>
-    
-                        <a href="VolkswagenPolo.html" >
-                        <input class="favorite styled" type="button" value="Buy Now">
-                        </a>
+            <h3><b>The Amazing Spiderman<br>Chapter: 800</br></h3>
+            <a href="Fanta_bees.html"><img src="../assets/Com3.png" height="320" width="240"><br></a>
         </div>
                 <div class="col-lg-4 mb-4">
-            <h3><b>Maruti Suzuki Baleno</b></h3>
-    
-            <p>
-                <img src="../assets/MarutiSuzukiBaleno.png" height="210" width="410"><br>
-			The Maruti Baleno has 1 Petrol Engine and 1 CNG Engine on offer. The Petrol engine is 1197 cc 
-			while the CNG engine is 1197 cc . It is available with Manual & Automatic transmission.Depending upon 
-			the variant and fuel type the Baleno has a mileage of 22.35 to 22.94 kmpl. The Baleno is a 5 seater 4 
-			cylinder car and has length of 3990mm, width of 1745mm and a wheelbase of 2520mm.
-		</p>
-    
-                        <a href="MarutiSuzukiBaleno.html" >
-                        <input class="favorite styled" type="button" value="Buy Now">
-                        </a>
+            <h3><b>The Fantastic Four<br></br></h3>
+                <a href="Hari_Puttar.html"><img src="../assets/Com3-2.png" width="240" width="320"><br></a>
         </div>
-
-                <div class="col-lg-4 mb-4">
-            <h3><b>Tata Tiago</b></h3>
-    
-            <p>
-                <img src="../assets/TataTiago.png" height="190" width="350"><br>
-			The Tata Tiago has 1 Petrol Engine and 1 CNG Engine on offer. 
-			The Petrol engine is 1199 cc while the CNG engine is 1199 cc . 
-			It is available with Manual & Automatic transmission.Depending upon the 
-			variant and fuel type the Tiago has a mileage of 20.09 kmpl to 26.49 km/kg 
-			& Ground clearance of Tiago is 168. The Tiago is a 5 seater 3 cylinder car 
-			and has length of 3765mm, width of 1677mm and a wheelbase of 2400mm.
-		</p>
-    
-                        <a href="TataTiago.html" >
-                        <input class="favorite styled" type="button" value="Buy Now">
-                        </a>
+        <div class="col-lg-4 mb-4">
+            <h3><b>Jujitsu Kaisen<br>Chapter: 85</b></h3>
+            <a href="Lost_Moment_Found.html"><img src="../assets/Com5.png" width="240" width="320"><br></a>
         </div>
-
-                <div class="col-lg-4 mb-4">
-            <h3><b>Maruti Suzuki Swift</b></h3>
-    
-            <p>
-                <img src="../assets/MarutiSuzukiSwift.png" height="220" width="350"><br>
-			The Maruti Swift has 1 Petrol Engine and 2 CNG Engine on offer. 
-			The Petrol engine is 1197 cc while the CNG engine is 1197 cc and 1198 cc . 
-			It is available with Manual & Automatic transmission.Depending upon the variant 
-			and fuel type the Swift has a mileage of 23.2 kmpl to 30.9 km/kg . The Swift is a 
-			5 seater 4 cylinder car and has length of 3845mm, width of 1735mm and a wheelbase of 2450mm.
-		</p>
-                        <a href="MarutiSuzukiSwift.html" >
-                        <input class="favorite styled" type="button" value="Buy Now">
-                        </a>
+        <div class="col-lg-4 mb-4">
+            <h3><b>One Piece<br></br></h3>
+            <a href="StolenHeir.html"><img src="../assets/Com6.png" width="240" width="320"><br></a>
+            <br><br><br><br><br>
         </div>
+        
     </body>
+    
 </html>

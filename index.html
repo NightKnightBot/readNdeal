@@ -43,18 +43,13 @@
 
             table,
             th {
-                border: 1px solid black;
+                border: 0px solid black;
             }
 
             td {
-                border: 1px solid black;
-                text-align: right;
                 font-size: x-large;
             }
 
-            input {
-                align-content: left;
-            }
             input[type="number"] {
                 -moz-appearance: textfield;
             }
@@ -62,7 +57,7 @@
             input[type="number"]::-webkit-inner-spin-button {
                 -webkit-appearance: none;
                 margin: 0;
-            }
+            };
         </style>
     </head>
     <body>
@@ -78,28 +73,28 @@
             <br>
             <center>
                 <form id="form1" action="php/connect.php" method="post">
-                    <table style="width:100%">
+                    <table style="width:100%" align="center">
                         <tr>
-                            <td>Enter Email ID : </td>
-                            <td>
+                            <td align="right">Enter Email ID :   </td>
+                            <td style="margin-left: 20px;">
                                 <input type="email" id="mail" name="email">
                             </td>
                         </tr>
                         <tr>
-                            <td>Enter Full Name : </td>
-                            <td>
+                            <td align="right">Enter Full Name :   </td>
+                            <td style="margin-right: 20px;">
                                 <input type="text" id="uname" name="uname">
                             </td>
                         </tr>
                         <tr>
-                            <td>Enter Mobile Number : </td>
-                            <td>
+                            <td align="right">Enter Mobile Number :   </td>
+                            <td style="margin-left: 20px;">
                                 <input type="number" inputmode="numeric" name="number" id="num">
                             </td>
                         </tr>
                         <tr>
-                            <td>Enter Account Password : </td>
-                            <td>
+                            <td align="right">Enter Account Password :   </td>
+                            <td style="margin-right: 20px;">
                                 <input type="password" name="password" id="pass">
                             </td>
                         </tr>
