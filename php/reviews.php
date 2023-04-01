@@ -17,13 +17,13 @@
         $result = mysqli_query($con, $sql);
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
-            echo "<b>" . $row["title"]. "</b><br>" . $row["data"]. "<br> Rating". $row["rating"];
+            echo "id: " . $row["id"]. " - Name: " . $row["name_fld"]. " Email: ". $row["email_fld"]. " Message: ". $row["msg_fld"] . "<br>";
             }
         }
-        echo '<script>window.location.replace("../html/HomePage.html")</script>';
         else {
             echo "0 results";
         }
+        
         echo '<script>window.location.replace("../html/HomePage.html")</script>';
         $conn->close();
     }
