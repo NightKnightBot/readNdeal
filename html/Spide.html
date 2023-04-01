@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Daughters Of Izdihar</title>
+        <title>Comic Category</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +51,7 @@
             }
             
             body {
-                background-image: url('../assets/Izdihar_Daughters.png');
+                background-image: url('../assets/Com3.png');
                 background-repeat: repeat;
                 background-attachment: fixed;
                 background-size: contain;
@@ -80,6 +80,12 @@
                 margin-right: auto;
                 display: block;
             }
+            button{
+                width:300px;
+                height:60px;
+                color:#000;
+                font-size: 20px;
+            };
         </style>
     </head>
 
@@ -106,23 +112,51 @@
 
         <h1>
         <centre>
-            Daughters Of Izdihar
+            The Amazing Spiderman: #800
         </centre>
         </h1>
-    <centre>
-        <p>
-            The first book in an incredibly powerful new duology by debut author Hadeer Elsbai is about two young women,
-            Nehal, a spoiled aristocrat used to getting what she wants,<br>and Giorgina, a poor bookshop worker used to having
-            nothing, who find they have far more in common, particularly in their struggle for women's rights and their ability
-            to fight for it with forbidden elemental magic.
-        </p>
-        
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Com3.png" width="450" height="650">
+                    <br><br><br><br><br>
+            </div>
+            <div class="row">
+                <br><br><br><br><br>
+                <p>
+                    <h3>
+                        In this issue, Spider-Man faces off against his arch-nemesis, the Green Goblin, in a climactic battle that takes place in New York City.<br> The Green Goblin has been targeting the people closest to Spider-Man, including his loved ones and his fellow heroes,<br> in an attempt to break him down and defeat him once and for all.<br><br>
+
+The issue is written by Dan Slott, who had been the series' writer for several years,<br> It also includes a number of variant covers by different artists.<br><br>
+
+Volume 800 of "Amazing Spider-Man" is a significant milestone in the series' history and marks a major turning point for the character. <br>It features an epic battle that tests Spider-Man's abilities and his relationships with the people in his life,<br> and sets the stage for future storylines in the series.
+                </h3>
+
+                </p>
+                <form action="../php/reviews.php" method="post">
+                    <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+                    <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+                    <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+                    <button class="favorite styled" type="submit">Submit Review</button>
+                </form>
+
+            </div>
+            <div class="col-lg-4">
+           <center>
+                <form action="add_to_cart.html">
+                    <center>
+                             <button type="submit" >Add To Cart</button>
+                    <center>
+                    </form>
+                    <br><br>
+                </center>
+
+            </div>
+
     </centre><br>
 
-        <center>
-        <input class="favorite styled" type="button" value="Add To Cart">
-    </center>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <br>
 
     </body>
 </html>

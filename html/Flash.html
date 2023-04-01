@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Daughters Of Izdihar</title>
+        <title>Comic Category</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +51,7 @@
             }
             
             body {
-                background-image: url('../assets/Izdihar_Daughters.png');
+                background-image: url('../assets/Com1.png');
                 background-repeat: repeat;
                 background-attachment: fixed;
                 background-size: contain;
@@ -80,6 +80,16 @@
                 margin-right: auto;
                 display: block;
             }
+            button{
+                width:300px;
+                height:60px;
+                color:#000;
+                font-size: 20px;
+            }
+            textarea{
+                width: 600px;
+                height: 100px;
+            };
         </style>
     </head>
 
@@ -106,23 +116,57 @@
 
         <h1>
         <centre>
-            Daughters Of Izdihar
+            Flash: Who Remebers Wally West?
         </centre>
         </h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Com1.png" width="450" height="650">
+                    <br><br><br><br><br>
+            </div>
+            <div class="row">
+                <br><br><br><br><br>
+                <p>
+                    <h2>
+                        Flash is a fictional superhero appearing in comic books published by DC Comics.<br> The character is known for his incredible speed and ability to move and think at incredible speeds, <br>making him one of the most powerful and iconic heroes in the DC Universe.<br><br>
+
+                        Wally West is a character <br>who has taken on the mantle of the Flash in the DC Comics universe.<br> He first appeared in 1959 as Kid Flash, the teenage sidekick of the original Flash, Barry Allen.<br> After Barry's death in the 1985 Crisis on Infinite Earths storyline, Wally took up the mantle of the Flash,<br> becoming a beloved hero in his own right.
+                        
+                    
+                </h2>
+
+                </p>
+
+                <form action="../php/reviews.php" method="post">
+                    <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+                    <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+                    <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+                    <button class="favorite styled" type="submit">Submit Review</button>
+                </form>
+
+            </div>
+            <div class="col-lg-4">
+           <center>
+                <form action="add_to_cart.html">
+                    <center>
+                             <button type="submit" >Add To Cart</button>
+                    <center>
+                    </form>
+                </center>
+
+            </div>
+ 
+
+                
+        </div>
     <centre>
-        <p>
-            The first book in an incredibly powerful new duology by debut author Hadeer Elsbai is about two young women,
-            Nehal, a spoiled aristocrat used to getting what she wants,<br>and Giorgina, a poor bookshop worker used to having
-            nothing, who find they have far more in common, particularly in their struggle for women's rights and their ability
-            to fight for it with forbidden elemental magic.
-        </p>
-        
+
+
     </centre><br>
 
-        <center>
-        <input class="favorite styled" type="button" value="Add To Cart">
-    </center>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <br>
 
     </body>
 </html>
