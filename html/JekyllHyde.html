@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Strange Case of Dr Jekyll and Mr Hyde</title>
+        <title>The Strange Case of Dr.Jekyll and Mr.Hyde</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,6 +68,11 @@
                 opacity: 0.7;
             }
 
+            input {
+                color: red;
+                background-color: yellow;
+            }
+
             img {
                 height: 325;
                 width: 500;
@@ -101,28 +106,37 @@
 
         <h1>
         <centre>
-            Strange Case of Dr Jekyll and Mr Hyde
+        The Strange Case of Dr.Jekyll and Mr.Hyde
         </centre>
         </h1>
-    <centre>
-        <p>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/JekyllAndHyde.jpg" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+
+        <centre>
+            <p>
             Dr. Jekyll develops a potion that allows him to transform into a completely different person - the violent and amoral Mr. Hyde. Initially, Jekyll is able to control his transformations and enjoys the freedom that the release of his dark side brings. However, as time goes on, Jekyll finds himself losing control over his transformations and becomes increasingly dependent on his alter-ego, Mr. Hyde.
             <br> <br>
             As the story progresses, Jekyll's friends and colleagues become increasingly alarmed at his strange behavior, and they start to uncover the truth about his connection to Mr. Hyde. The novella builds towards a dramatic and tragic climax, as the two sides of Jekyll's personality come into conflict and threaten to destroy him.
-        </p>
-        
-    </centre><br>
+            </p>
+        </centre><br>
+
+        <form action="../php/reviews.php" method="post">
+            <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+            <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+            <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+            <button class="favorite styled" type="submit">Submit Review</button>
+        </form>
 
         <center>
-        <input class="favorite styled" type="button" value="Add To Cart">
-    </center>
-    <form action="../php/reviews.php" method="post">
-        <label for="title">Title: </label>
-        <input type="text" name="title" id="title">
-        <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea>
-        <button type="submit">SUbmit</button>
-    </form>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <form action="add_to_cart.html">
+          <button class="favorite styled" type="submit" value="Add To Cart">Go To Cart</button>
+          </form>
+        </center>
 
     </body>
 </html>

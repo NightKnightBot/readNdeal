@@ -106,22 +106,37 @@
 
         <h1>
         <centre>
-            Cartel
+        Cartel
         </centre>
         </h1>
-    <centre>
-        <p>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Cartel.jpg" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+
+        <centre>
+            <p>
             "Cartel" is a non-fiction book written by investigative journalist Edward Jay Epstein, published in 1980. The book examines the structure and workings of the illegal drug trade in the United States, and how it is controlled by a small group of powerful drug cartels.
             <br> <br>
             Epstein takes a deep dive into the world of drug trafficking, exploring the origins of the cartels and their rise to power. He also investigates the various methods used by the cartels to smuggle drugs into the United States, and how they use their vast wealth and influence to evade law enforcement and maintain their grip on the drug trade.
-        </p>
-        
-    </centre><br>
+            </p>
+        </centre><br>
 
-    <form action="index.php?page=cart" method="post">
-        <input type="submit" value="Add To Cart">
-    </form>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <form action="../php/reviews.php" method="post">
+            <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+            <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+            <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+            <button class="favorite styled" type="submit">Submit Review</button>
+        </form>
+
+        <center>
+          <form action="add_to_cart.html">
+          <button class="favorite styled" type="submit" value="Add To Cart">Go To Cart</button>
+          </form>
+        </center>
 
     </body>
 </html>

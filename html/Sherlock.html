@@ -106,22 +106,38 @@
 
         <h1>
         <centre>
-            Sherlock Holmes
+        Sherlock Holmes
         </centre>
         </h1>
-    <centre>
-        <p>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Sherlock.jpg" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+
+        <centre>
+            <p>
+
             The Sherlock Holmes books are a series of detective novels and short stories written by Sir Arthur Conan Doyle, featuring the famous fictional detective Sherlock Holmes and his loyal friend and colleague Dr. John Watson. The stories are set in late 19th and early 20th century London and cover a wide range of crimes, from murder and theft to blackmail and fraud.
             <br> <br>
             Sherlock Holmes is known for his exceptional deductive reasoning skills, his keen attention to detail, and his ability to solve even the most baffling of cases. He is often accompanied by his trusted friend and colleague, Dr. Watson, who acts as his biographer and assistant throughout many of the stories.
-        </p>
-        
-    </centre><br>
+            </p>
+        </centre><br>
+
+        <form action="../php/reviews.php" method="post">
+            <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+            <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+            <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+            <button class="favorite styled" type="submit">Submit Review</button>
+        </form>
 
         <center>
-        <input class="favorite styled" type="button" value="Add To Cart">
-    </center>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <form action="add_to_cart.html">
+          <button class="favorite styled" type="submit" value="Add To Cart">Go To Cart</button>
+          </form>
+        </center>
 
     </body>
 </html>

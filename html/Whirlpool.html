@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Whirlpool</title>
+        <title>Cartel</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,22 +106,37 @@
 
         <h1>
         <centre>
-            Whirlpool
+        Whirlpool
         </centre>
         </h1>
-    <centre>
-        <p>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Whirlpool.jpg" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+
+        <centre>
+            <p>
             "Whirlpool" is a thriller novel by British author Colin Forbes, published in 1991. The book tells the story of a journalist named Mark Treasure, who investigates a series of bizarre and seemingly unrelated incidents, including a plane crash and the murder of a Russian diplomat in London.
             <br> <br>
             As Treasure delves deeper into the case, he discovers a plot by a shadowy organization known as the Brotherhood to destabilize the world's governments and establish a new world order. With the help of a female Russian spy and an American journalist, Treasure races against time to uncover the truth behind the Brotherhood's sinister plans.
-        </p>
-        
-    </centre><br>
+            </p>
+        </centre><br>
+
+        <form action="../php/reviews.php" method="post">
+            <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+            <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+            <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+            <button class="favorite styled" type="submit">Submit Review</button>
+        </form>
 
         <center>
-        <input class="favorite styled" type="button" value="Add To Cart">
-    </center>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <form action="add_to_cart.html">
+          <button class="favorite styled" type="submit" value="Add To Cart">Go To Cart</button>
+          </form>
+        </center>
 
     </body>
 </html>

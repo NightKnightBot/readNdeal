@@ -49,7 +49,7 @@
                 box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
             }
-
+            
             body {
                 background-image: url('../assets/Exile.jpg');
                 background-repeat: repeat;
@@ -99,7 +99,6 @@
                             <li><a href="Mystery.html">Mystery</a></li>
                             <li><a href="Fantasy.html">Fantasy</a></li>
                             <li><a href="Comic.html">Comics</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -107,22 +106,38 @@
 
         <h1>
         <centre>
-            The Exile
+        The Exile
         </centre>
         </h1>
-    <centre>
-        <p>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Exile.jpg" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+
+        <centre>
+            <p>
            "The Exile" is a novel by Allan Folsom, published in 2004. The book tells the story of a man named Nick Randall, who is an ex-CIA agent living in Paris. One day, Nick receives a phone call from a woman claiming to be his mother, who he believed to be dead. She tells him that his father, a former U.S. senator, has been murdered, and that Nick is in danger. Nick soon finds himself on the run, pursued by a ruthless assassin, and embarks on a journey across Europe to uncover the truth about his past and his family.
             <br> <br>
             The novel is a fast-paced thriller with numerous plot twists and turns, and has been compared to works by authors such as Dan Brown and Robert Ludlum. It combines elements of espionage, conspiracy, and political intrigue, as well as exploring themes of family, identity, and betrayal. Overall, "The Exile" is a gripping and suspenseful novel that will keep readers on the edge of their seats until the very end. 
-        </p>
-        
-    </centre><br>
+                Men rule Middle-earth after the Third Age ends.
+            </p>
+        </centre><br>
+
+        <form action="../php/reviews.php" method="post">
+            <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+            <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+            <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+            <button class="favorite styled" type="submit">Submit Review</button>
+        </form>
 
         <center>
-        <input class="favorite styled" type="button" value="Add To Cart">
-    </center>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <form action="add_to_cart.html">
+          <button class="favorite styled" type="submit" value="Add To Cart">Go To Cart</button>
+          </form>
+        </center>
 
     </body>
 </html>
