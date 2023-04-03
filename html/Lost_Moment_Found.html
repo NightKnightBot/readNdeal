@@ -109,12 +109,26 @@
             Lost in the Moment and Found
         </centre>
         </h1>
-    <centre>
-        <p>
-            Lost in the Moment and Found, a standalone story from Seanan McGuire's Hugo and Nebula Award-winning Wayward Children series, follows a little girl's discovery of limitless universes.
-        </p>
-        
-    </centre><br>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Lost_Moment.png" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+
+        <centre>
+            <p>
+                Lost in the Moment and Found, a standalone story from Seanan McGuire's Hugo and Nebula Award-winning Wayward Children series, follows a little girl's discovery of limitless universes.
+            </p>
+        </centre><br>
+
+        <form action="../php/reviews.php" method="post">
+            <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+            <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+            <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+            <button class="favorite styled" type="submit">Submit Review</button>
+        </form>
 
         <center>
         <input class="favorite styled" type="button" value="Add To Cart">

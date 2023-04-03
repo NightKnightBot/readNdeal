@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Fantastic Beasts and Where to FInd Them</title>
+        <title>Harry Potter and the Chamber of Secrets
+
+        </title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -105,21 +107,34 @@
         </nav>
 
         <h1>
-        <centre>
-            Harry Potter and The Chamber of Secrets
-        </centre>
+            <centre>
+                Harry Potter and The Chamber of Secrets
+            </centre>
         </h1>
-    <centre>
-        <p>
-            Wizard Harry Potter. Hogwarts is his second year. He doesn't realise that this year will be just as hectic.
-        </p>
-        
-    </centre><br>
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Harry_Potter.png" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+        <div class="row">
+            <p>
+                <h3>
+                    Wizard Harry Potter. Hogwarts is his second year. He doesn't realise that this year will be<br>just as hectic.
+                </h3>
+            </p>
+
+            <form action="../php/reviews.php" method="post">
+                <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+                <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+                <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+                <button class="favorite styled" type="submit">Submit Review</button>
+            </form>
+        </div>
 
         <center>
-        <input class="favorite styled" type="button" value="Add To Cart">
-    </center>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-
+            <input class="favorite styled" type="button" value="Add To Cart">
+        </center>
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     </body>
 </html>

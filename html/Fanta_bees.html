@@ -109,12 +109,26 @@
             Fantastic Beasts and Where to FInd Them
         </centre>
         </h1>
-    <centre>
-        <p>
-            Discover Fantastic Beasts and Where to Find Them with Newt Scamander. Enter Newt Scamander's magical suitcase, meet amazing animals, explore 1920s New York City, and meet his interesting companions!
-        </p>
-        
-    </centre><br>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Fant_Beasts.png" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+
+        <centre>
+            <p>
+                Discover Fantastic Beasts and Where to Find Them with Newt Scamander. Enter Newt Scamander's magical suitcase, meet amazing animals, explore 1920s New York City, and meet his interesting companions!
+            </p>
+        </centre><br>
+
+        <form action="../php/reviews.php" method="post">
+            <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+            <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+            <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+            <button class="favorite styled" type="submit">Submit Review</button>
+        </form>
 
         <center>
         <input class="favorite styled" type="button" value="Add To Cart">

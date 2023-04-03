@@ -109,17 +109,30 @@
             The Stolen Heir
         </centre>
         </h1>
-    <centre>
-        <p>
-            Eight years after Serpent Battle. Lady Nore recovered the northern Needle Citadel. She's making revenge stick and snow creatures with an archaic artefact.Suren fled to humans. Wild. She waits by rescuing mortals. Storm hag Bogdana chases her at night. Prince Oak saves Suren. Oak, 17, manipulates. Suren must work north. If she agrees, she must shield her heart from the youth she knew, a prince she cannot trust, and the horrors she believed she left behind.
-        </p>
-        
-    </centre><br>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <br><br><br>
+                    <img src="../assets/Stolen_Heir.png" width="450" height="650">
+                <br><br><br><br><br>
+        </div>
+
+        <centre>
+            <p>
+                Eight years after Serpent Battle. Lady Nore recovered the northern Needle Citadel. She's making revenge stick and snow creatures with an archaic artefact.Suren fled to humans. Wild. She waits by rescuing mortals. Storm hag Bogdana chases her at night. Prince Oak saves Suren. Oak, 17, manipulates. Suren must work north. If she agrees, she must shield her heart from the youth she knew, a prince she cannot trust, and the horrors she believed she left behind.
+            </p> 
+        </centre><br>
+
+        <form action="../php/reviews.php" method="post">
+            <input type="text" name="title1" id="title1" placeholder="Enter Title"> <br><br>
+            <textarea name="data" id="data" cols="30" rows="10" placeholder="Please Give Your Review Here"></textarea> <br><br>
+            <label for="rating">Rating: </label> <input type="number" name="rating" value="5"> <br><br>
+            <button class="favorite styled" type="submit">Submit Review</button>
+        </form>
 
         <center>
         <input class="favorite styled" type="button" value="Add To Cart">
     </center>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-
     </body>
 </html>
